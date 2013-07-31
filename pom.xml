@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>nz.ac.auckland</groupId>
+        <artifactId>parent-groovy-groupapps-central</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <groupId>nz.ac.auckland.lmz</groupId>
+    <artifactId>lmz-validate</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>LMZ Validate</name>
+    <description>JSR-303 validation extensions for LMZ applications</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>nz.ac.auckland.grayles</groupId>
+            <artifactId>lmz-core</artifactId>
+            <version>[1,2)</version>
+        </dependency>
+
+        <dependency>
+            <groupId>nz.ac.auckland.composite</groupId>
+            <artifactId>composite-groovy</artifactId>
+            <version>[5,6)</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.3.1.Final</version>
+        </dependency>
+
+    </dependencies>
+</project>
